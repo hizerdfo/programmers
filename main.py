@@ -51,3 +51,17 @@ def solution(numbers):
         numbers[i] *= 2;
     answer =numbers
     return answer
+
+
+def solution(numbers):
+    total = 0
+    for i in range(len(numbers)):
+        total += numbers[i]
+    answer =  total / len(numbers)
+    return answer
+
+
+def solution(n, k):
+    service = n // 10
+    answer = 12000 * n + 2000 * (k - service)
+    return answer
